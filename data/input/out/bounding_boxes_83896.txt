@@ -1,0 +1,14 @@
+../../data/input/out\Johnson\Johnson_1.png 136 29 239 145
+../../data/input/out\Johnson\Johnson_2.png 67 8 182 146
+../../data/input/out\Johnson\Johnson_3.png 204 63 350 239
+../../data/input/out\Johnson\Johnson_4.png 229 66 356 215
+../../data/input/out\Johnson\Johnson_5.png 114 0 299 225
+../../data/input/out\Park_Geun_hye\Park_Geun_hye_1.png 153 124 344 356
+../../data/input/out\Park_Geun_hye\Park_Geun_hye_2.png 215 60 387 274
+../../data/input/out\Park_Geun_hye\Park_Geun_hye_3.png 174 34 346 240
+../../data/input/out\Park_Geun_hye\Park_Geun_hye_4.png 276 56 531 360
+../../data/input/out\Park_Geun_hye\Park_Geun_hye_5.png 237 36 371 193
+../../data/input/out\Trump\Trump_1.png 410 106 766 549
+../../data/input/out\Trump\Trump_2.png 103 74 541 645
+../../data/input/out\Trump\Trump_3.png 177 15 311 168
+../../data/input/out\Trump\Trump_4.png 340 68 581 364
