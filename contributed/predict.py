@@ -34,7 +34,6 @@ import numpy as np
 import argparse
 import os
 import sys
-sys.path.append(os.path.abspath('..'))
 import src.facenet as facenet
 import math
 import pickle

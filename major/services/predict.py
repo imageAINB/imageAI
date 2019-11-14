@@ -1,22 +1,32 @@
 from django.http import JsonResponse
 from major.utils import file_utils
-import contributed.predict as pre
+from major.utils.model_utils import predict_photo, create_set
+from major.utils.const import Const as const
 import os
 
 
-def predict(file_obj, model_path, clf_path):
-    file_name = file_utils.save_file(file_obj)
-    file_name = file_utils.transform_path(file_name)  # 转化为绝对路径，不然容易找不到文件
-    model_path = file_utils.transform_path(model_path)
-    clf_path = file_utils.transform_path(clf_path)
-
+def predict(file_obj, username, setname):
+    userpath = const.USER_PRE + '/' + username
+    setpath = const.TRAIN_SET_PRE + '/' +setname
+    model_path = const.MODEL_PATH
+    clf_path = setpath + '/' + const.CLASSFY_SUF
+    file_name = file_utils.save_file(userpath, file_obj)
+    print("file_name:")
+    print(file_name)
+    print("model_path:")
+    print(model_path)
+    print("clf_path:")
+    print(clf_path)
     argv = [file_name,
             model_path,
             clf_path]
-    name, pos = pre.main(pre.parse_arguments(argv))
+    name, pos = predict_photo(argv)
     print(name)
     print(pos)
     res = JsonResponse({"result": name,
                         "posibility": pos})
     os.remove(file_name)  # 用完请删除
     return res
+
+if __name__ == '__main__':
+    create_set("test_name")

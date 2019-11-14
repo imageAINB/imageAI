@@ -1,7 +1,0 @@
-arguments: align_dataset_mtcnn.py ../../data/input/in ../../data/input/out
---------------------
-tensorflow version: 1.7.0
---------------------
-git hash: b'c69685c292872b43350047f444247972fe432a84'
---------------------
-b'diff --git a/requirements.txt b/requirements.txt\nindex e130f89..db47c88 100644\n--- a/requirements.txt\n+++ b/requirements.txt\n@@ -1,4 +1,4 @@\n-numpy=1.16.1\n+numpy==1.16.1\n tensorflow==1.7\n scipy==1.2.0\n scikit-learn'
